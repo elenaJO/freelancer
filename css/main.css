@@ -91,7 +91,7 @@ header{
   margin-top: 10px;
 }
 
-.fa-star{
+.fa{
   color:#fff;
   font-size: 30px;
   display:block;
@@ -106,7 +106,7 @@ header{
 }
 span::before{
   content:" ";
-  background-color: #fff;
+  background-color:#fff;
   position: relative;
   display: inline-block;
   width: 100px;
@@ -125,8 +125,53 @@ span::after{
   bottom: 30px;
 }
 
-/*.container p{
-  font-family: 'Lato';
-  font-size: 28px;
-  font-weight: 300;
-}*/
+main{
+  margin-top: 110px;
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  background-color: #fff;
+}
+
+/*MAIN*/
+ /*section portfolio*/
+.portfolio h2{
+  font-family:'Montserrat';
+  font-size: 48px;
+  color:#212529;
+
+}
+
+.black{
+  color:#2c3e50;
+}
+
+.portfolio span::before{
+  content:" ";
+  background-color:#2c3e50;
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 5px;
+  right: 75px;
+  top:20px;
+}
+
+.portfolio span::after{
+  content:" ";
+  background-color: #2c3e50;
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 5px;
+  left:75px;
+  bottom: 30px;
+}
+
+.portfolio figure img{
+  width: 350px;
+  height: 250px;
+  margin: 15px;
+}
+
+/*section about*/
