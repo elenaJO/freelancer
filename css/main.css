@@ -363,7 +363,7 @@ footer{
   margin-top: 25px;
   margin-left: 5px;
 }
-.colum-2 i:hover{
+.colum-2 i:hover{ /*cuando el cursor este encima del los iconos*/
   background: #fff;
   color:#18bc9c;
 }
