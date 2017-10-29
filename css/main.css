@@ -3,47 +3,48 @@
  */
 
 /*NAVEGADOR*/
+/*estilos que tendra todo los elementos de la pagina*/
 *{
   box-sizing: border-box;
   margin: 0;
 }
 
-.text-uppercase{
+.text-uppercase{ /*clase para que convierta en mayuscula*/
   text-transform: uppercase;
 }
 
 nav{
   /*outline: 1px solid blue;*/
-  background: #2c3e50;
+  background: #2c3e50; /*color de fondo*/
   top:0;
   right: 0; /*para que este pegado a los extremos*/
   left: 0;
   font-family: 'Montserrat';
   height: 110px;
-  position: fixed;
-  padding-top: 35px;
-  z-index: 1000;
+  position: fixed; /*posicion fija*/
+  padding-top: 35px; /**/
+  z-index: 1000; /*para que este se vea primero cuando se interponen*/
   color:#fff;
 }
 
-a{
-  text-decoration: none;
+a{ /*estilos a todos los elementos <a> de header*/
   color:#fff;
+  text-decoration: none; /*para que no se vea los subrrayados*/
 }
 
-.main-title a{
+.main-title a{ /*para posicionar el titulo principal*/
   font-size: 32px;
   font-weight: 900;
   position:relative;
   left: 9%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /*al medio*/
 }
 
 .menu, .menu li, .menu ul{
-  display: inline-block;
+  display: inline-block; /*para que los elementos el lista se vuelvan en linea*/
 }
 
-.menu ul{
+.menu ul{ /*posicionas la etiueta <ul>*/
   list-style: none;
   position:absolute;
   right:9%;
@@ -56,19 +57,19 @@ a{
   font-weight: 900;
 }
 
-.menu a:hover{
+.menu a:hover{ /*cuando el mause este por encima cambie de color de las listas del menu*/
   color:#128f76;
 }
 /*HEADER*/
 header{
   margin-top: 110px;
-  width: 100%;
+  width: 100%; /*ocupe todo el ancho de la pantalla*/
   height: 700px;
   text-align: center;
   background-color: #18bc9c;
 }
 
-.head{
+.head{ /*posicicionar el contenedor head*/
    width: 60%;
    position: relative;
    left:50%;
@@ -76,12 +77,12 @@ header{
    top:90px;
 }
 
-.head-title{
+.head-title{ /*estilos para la etiqueta <h1> del contenedor head*/
   font-size: 76px;
   color:#fff;
   font-family: 'Montserrat';
   font-weight: bold;
-  margin-top: 25px;
+  margin-top: 25px; /*para que baje la etiqueta <h1>*/
 }
 
 .head p{
@@ -91,40 +92,35 @@ header{
   margin-top: 10px;
 }
 
-.fa{
+.fa{ /*estilos a todas los iconos de estrella*/
   color:#fff;
   font-size: 30px;
   display:block;
   position: relative;
   top:25%;
 }
-.rule{
-  outline: 1px solid blue;
-  height: 70px;
-  position: relative;
 
-}
-span::before{
+span::before{ /*antes de la etiqueta <span> para que se forme la liena*/
   content:" ";
   background-color:#fff;
   position: relative;
   display: inline-block;
   width: 100px;
   height: 5px;
-  right: 75px;
-  top:20px;
+  right: 75px;/*para que se posicione a la izuierda*/
+  top:20px; /*para que baje*/
 }
-span::after{
+span::after{/*despues de la etiqueta <span> para que se forme la liena*/
   content:" ";
   background-color: #fff;
   position: relative;
   display: inline-block;
   width: 100px;
   height: 5px;
-  left:75px;
-  bottom: 30px;
+  left:75px; /*para que se posicione a la derecha*/
+  bottom: 30px; /*para que sube*/
 }
-
+/*MAIN*/
 main{
   margin-top: 110px;
   top:0;
@@ -134,16 +130,13 @@ main{
   background-color: #fff;
 }
 
-/*MAIN*/
- /*section portfolio*/
-.portfolio h2{
+.portfolio h2{  /*section portfolio la etiqueta h2*/
   font-family:'Montserrat';
   font-size: 48px;
   color:#212529;
-
 }
 
-.black{
+.black{ /*para ue la estrella sea de color*/
   color:#2c3e50;
 }
 
@@ -169,13 +162,13 @@ main{
   bottom: 30px;
 }
 
-.portfolio figure img{
+.portfolio figure img{ /*estilos a la imagenes*/
   width: 350px;
   height: 250px;
   margin: 15px;
 }
 
-.portfolio figure{
+.portfolio figure{ /*estilos al contededor de las imagenes*/
   margin-bottom: 80px;
 }
 /*section about*/
@@ -208,23 +201,23 @@ main{
   left: 22%;
 }
 
-.download{
-   width: 200px;
+.download{ /*estilos de la etiqueta <a> con clase download*/
+   width: 200px; /*ancho*/
    font-family: 'Lato';
    font-size: 18px;
-   border-radius: 5px;
+   border-radius: 5px; /*bordes redondeados*/
    padding: 10px 8px;
    margin-top: 30px;
    margin-bottom: 100px;
    background: none;
    border: 2px solid #fff;
    color:#fff;
-   display: block;
+   display: block; /*tipo bloque*/
    position: relative;
    left:50%;
-   transform: translateX(-50%);
+   transform: translateX(-50%); /*al medio*/
 }
-.about a:hover{
+.about a:hover{/*cuando pasa el mouse*/
   background-color:#fff;
   color:#18bc9c;
 }
@@ -238,6 +231,7 @@ main{
 .fa-download:hover{
   color:#18bc9c;
 }
+
 .contact-me h2{
   font-family:'Montserrat';
   font-size: 48px;
@@ -245,7 +239,7 @@ main{
   margin-top: 100px;
 }
 
-.contact-me span::before{
+.contact-me span::before{ /*estilos para la estrella antes*/
   content:" ";
   background-color:#2c3e50;
   position: relative;
@@ -256,7 +250,7 @@ main{
   top:20px;
 }
 
-.contact-me span::after{
+.contact-me span::after{/*estilos para la estrella despues*/
   content:" ";
   background-color: #2c3e50;
   position: relative;
@@ -267,8 +261,7 @@ main{
   bottom: 30px;
 }
 
-form{
-  /*outline: 1px solid red;*/
+form{/*para estilos form*/
   width: 55%;
   position: relative;
   left: 50%;
@@ -276,15 +269,15 @@ form{
 }
 
 input,textarea{
-  display: block;
+  display: block;/*estilos bloque*/
   width: 100%;
   font-size: 24px;
   line-height: 36px;
   font-family: 'Lato';
   margin-bottom: 30px;
   height: 100px;
-  border: none;
-  border-bottom:1px solid #eaeaea;
+  border: none; /*que no tenga borde*/
+  border-bottom:1px solid #eaeaea; /*borde inferior*/
   outline: none;
   color:#868e96;
 }
@@ -293,7 +286,7 @@ textarea{
   height: 260px;
 }
 
-input[type="submit"]{
+input[type="submit"]{ /*estilo atributos , estilo al que tiene atributo type que es igual a submit*/
   width: 10%;
   font-size: 20px;
   font-weight: bold;
@@ -322,15 +315,15 @@ footer{
   padding-top: 30px;
 }
 
-.row{
+.row{/*estilos al contenedor row*/
   width: 1090px;
   position: relative;
   left:50%;
   transform: translateX(-50%);
   top:30px;
-  vertical-align: middle;
+  vertical-align: middle;/*para que se ponga al medio*/
   height: 160px;
-  display: table;
+  display: table;/*su contenido es tipo tabla*/
 }
 
 .row h3{
@@ -343,7 +336,7 @@ footer{
   display: inline-block;
   text-align: center;
   margin: 40px;
-  display: table-cell;
+  display: table-cell; /*se colocaran el celdas*/
 }
 
 .colum-3{
@@ -355,10 +348,10 @@ footer{
 }
 
 .colum-3 p a:hover{
-  text-decoration:underline;
+  text-decoration:underline;/*para que cuando este el mouse se ponga una linea abajo*/
 }
 
-.colum-2 i{
+.colum-2 i{/*estilos para los iconos*/
   display: inline-block;
   border:2px solid white;
   border-radius: 50px;
