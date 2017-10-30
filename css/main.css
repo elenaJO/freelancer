@@ -235,7 +235,7 @@ main{
 .download{ /*estilos de la etiqueta <a> con clase download*/
    width: 200px; /*ancho*/
    font-family: 'Lato';
-   font-size: 18px;
+   font-size: 20px;
    border-radius: 5px; /*bordes redondeados*/
    padding: 10px 8px;
    margin-top: 30px;
@@ -248,19 +248,15 @@ main{
    left:50%;
    transform: translateX(-50%); /*al medio*/
 }
-.about a:hover{/*cuando pasa el mouse*/
+.download:hover{/*cuando pasa el mouse*/
   background-color:#fff;
   color:#18bc9c;
 }
 
 .fa-download{
   display: inline-block;
-  margin-right: 5px;
-  font-size: 20px;
-}
-
-.fa-download:hover{
-  color:#18bc9c;
+  font-size: inherit;
+  color:inherit;
 }
 
 .contact-me h2{
