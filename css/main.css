@@ -229,7 +229,8 @@ main{
   overflow: auto;
   width: 780px;
   position: relative;
-  left: 22%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .download{ /*estilos de la etiqueta <a> con clase download*/
