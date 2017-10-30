@@ -172,35 +172,34 @@ main{
   margin-bottom: 80px;
 }
 
-.container-image{
+.container-image{/*el contenedor de la imagen*/
   width:400px;
   display: inline-block;
   margin-top: 10px;
   position: relative;
 }
 
-.icon{
+.icon{ /*el contenedor del icono*/
   width:350px;
   height: 250px;
   display: inline-block;
   margin-top: 10px;
-  background-color: rgba(24,188,156,.9);
+  background-color: rgba(24,188,156,.9);/*con opacidad de 90%*/
   position: absolute;
-  opacity: 1;
   left:25px;
   top:5px;
-  opacity: 0;
+  opacity: 0;/*para que no se visualice*/
 }
 
 .icon:hover{
-  opacity: 1;
+  opacity: 1;/*cuando el cursor este encima se mostrara el contenedor icon*/
 }
 
-.fa-search-plus{
+.fa-search-plus{/*icono de busqueda*/
   font-size: 60px;
   position: relative;
   top:50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%);/*para que se posicione al medio*/
 }
 
 /*section about*/
